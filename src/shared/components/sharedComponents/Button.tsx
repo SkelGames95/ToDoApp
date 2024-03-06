@@ -1,4 +1,4 @@
-import classes from '../style/Button.module.scss'
+import classes from './style/Button.module.scss'
 
 export const Button = () => {
   return (

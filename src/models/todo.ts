@@ -1,7 +1,6 @@
 interface ToDo {
     id?:number;
     title:string;
-    userId:number;
     description?:string;
     completed:boolean;
     postponed:boolean;
@@ -10,17 +9,16 @@ interface ToDo {
     checked?:boolean;
 }
 
-type ToDoDraft = Partial<ToDo> & Required<Pick<ToDo, 'title' | 'userId'>>;
+type ToDoDraft = Partial<ToDo> & Required<Pick<ToDo, 'title' | 'id'>>;
 
-export function createTodo( ToDoDraft:ToDoDraft) {
+export function createTodo( ToDoDraft:ToDoDraft): ToDo {
     return {
         id:ToDoDraft.id,
         title:ToDoDraft.title,
-        userId: ToDoDraft.userId,
         completed: ToDoDraft.completed ?? false,
         postponed: ToDoDraft.postponed ?? false,
         failed: ToDoDraft.failed ?? false,
         prioritized: ToDoDraft.prioritized ?? false,
         checked: ToDoDraft.checked ?? false
-    } as ToDo;
+    }
 }

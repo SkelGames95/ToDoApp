@@ -1,5 +1,6 @@
-import { Button } from './sharedComponents/Button'
-import { Schedule } from './sharedComponents/Schedule'
+import { Button } from '../sharedComponents/Button'
+import { Input } from '../sharedComponents/Input'
+import { Schedule } from './Schedule'
 import classes from './style/Body.module.scss'
 
 export const Body = () => {
@@ -10,7 +11,10 @@ export const Body = () => {
                     <Schedule />
                 </div>
                 <div>
-
+                    {/* <AddSchedule /> */}
+                </div>
+                <div>
+                    <Input />
                 </div>
                 <div className={classes.buttons}>
                     <Button />

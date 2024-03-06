@@ -1,4 +1,4 @@
-import { Body } from "../shared/components/Body";
+import { Body } from "../shared/components/containers/Body";
 import { Header } from "../shared/components/containers/Header"
 import { Navbar } from "../shared/components/sharedComponents/Navbar";
 import classes from './Homepage.module.scss'
