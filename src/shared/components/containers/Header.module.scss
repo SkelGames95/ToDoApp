@@ -1,0 +1,27 @@
+.headerText{
+    padding-top: 10px;
+    padding-inline: 60px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--first-back-color);
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white-smoke);
+}
+
+.titles{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: var(--first-back-color);
+}
+
+.subtitle{
+    border-radius: 10px;
+    padding-inline: 60px;
+    border: 2px solid var(--grey-bb);
+    background-color: var(--white-smoke);
+    color: black;
+}

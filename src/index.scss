@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-back-color: rgb(19, 19, 231);
+    --light-back-color: rgb(255, 255, 255);
+    --grey-bb: rgb(185, 185, 185);
+    --completed-color: rgb(33, 240, 33);
+    --failed-color: red;
+    --white-smoke: rgb(248, 248, 248);
+    --postposted-color: rgba(250, 206, 8, 0.986);
+    --normal-font: Verdana, Geneva, Tahoma, sans-serif;
+    --normal-fsize: 14px;
+}

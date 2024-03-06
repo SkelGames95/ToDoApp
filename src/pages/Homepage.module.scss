@@ -1,0 +1,27 @@
+.homeContainer{
+    position: relative;
+    height: 100vh;
+}
+
+.navbarzone{
+    background-color: var(--grey-bb);
+    height: 70px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.hpHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.footerzone{
+    background-color: var(--grey-bb);
+    height: 150px;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+}
