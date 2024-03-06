@@ -1,0 +1,31 @@
+button{
+    min-width: 90px;
+    min-height: 10px;
+    padding: 7px 10px;
+    margin-inline: 10px; 
+    border-radius: 8px;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--normal-font);
+    font-size: var(--normal-fsize);
+
+}
+
+.completeButton{
+    background-color: var(--completed-color);
+    margin-left: 0;
+}
+
+.deleteButton{
+    background-color: var(--failed-color);
+}
+
+.prioritizeButton{
+    background-color: var(--priority-color);
+}
+
+.snoozeButton{
+    background-color: var(--snooze-color);
+}
+

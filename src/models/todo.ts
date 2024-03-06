@@ -3,7 +3,7 @@ interface ToDo {
     title:string;
     description?:string;
     completed:boolean;
-    postponed:boolean;
+    snoozed:boolean;
     failed:boolean;
     prioritized:boolean;
     checked?:boolean;
@@ -16,7 +16,7 @@ export function createTodo( ToDoDraft:ToDoDraft): ToDo {
         id:ToDoDraft.id,
         title:ToDoDraft.title,
         completed: ToDoDraft.completed ?? false,
-        postponed: ToDoDraft.postponed ?? false,
+        snoozed: ToDoDraft.snoozed ?? false,
         failed: ToDoDraft.failed ?? false,
         prioritized: ToDoDraft.prioritized ?? false,
         checked: ToDoDraft.checked ?? false
