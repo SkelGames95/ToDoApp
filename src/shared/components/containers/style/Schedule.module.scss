@@ -1,5 +1,7 @@
 .schedules{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     border: 2px solid var(--grey-bb);
     width: 450px;
     min-height: 100px;
@@ -9,15 +11,3 @@
     font-family: var(--normal-font);
 }
 
-h2{
-    margin-right: 260px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-.tinyicons{
-    height: 24px;
-    width: 20px;
-    margin: 3px;
-    margin-top: 5px;
-}

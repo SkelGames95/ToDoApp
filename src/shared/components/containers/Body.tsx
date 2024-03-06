@@ -11,6 +11,9 @@ export const Body = () => {
             <div>
                 <Schedule />
                 {/* <AddSchedule /> */}
+                
+            </div>
+            <div>
                 <TasksButtons />
             </div>
             <div>

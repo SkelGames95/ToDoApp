@@ -1,15 +1,17 @@
 .genericButton{
-    min-width: 90px;
+    min-width: 100px;
     min-height: 10px;
     padding: 7px 10px;
-    margin-inline: 10px; 
+    margin-inline: 8px;
     border-radius: 8px;
     border: 1px solid black;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     font-family: var(--normal-font);
-    font-size: var(--normal-fsize);
+}
 
+.genericButton:hover{
+    border: 3px solid black;
 }
 
 .completeButton{
