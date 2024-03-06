@@ -2,7 +2,9 @@
     display: flex;
     border: 2px solid var(--grey-bb);
     width: 450px;
-    height: 550px;
+    min-height: 100px;
+    height: fit-content;
+    padding-bottom: 20px;
     margin-bottom: 20px;
     font-family: var(--normal-font);
 }

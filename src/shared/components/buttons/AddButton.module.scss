@@ -1,8 +1,10 @@
 .addButton{
     font-family: var(--normal-font);
-    background-color: var(--failed-color);
+    background-image: radial-gradient(orange, red);
     border-radius: 8px;
     font-weight: 600;
-    font-size: 26px;
-    width: 10px;
+    font-size: 20px;
+    width: 70px;
+    height: 40px;
+    margin-left: 0px;
 }

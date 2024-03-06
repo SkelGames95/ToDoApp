@@ -15,8 +15,8 @@ export const Body = () => {
             </div>
             <div>
                 <Input />
-                <AddButton />
             </div>
+            <AddButton />
         </div>
     )
 }

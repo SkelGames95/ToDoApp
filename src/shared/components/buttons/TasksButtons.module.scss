@@ -1,4 +1,4 @@
-button{
+.genericButton{
     min-width: 90px;
     min-height: 10px;
     padding: 7px 10px;
@@ -13,19 +13,19 @@ button{
 }
 
 .completeButton{
-    background-color: var(--completed-color);
+    background-image: linear-gradient(to right, rgb(74, 163, 74), rgb(10, 255, 10));
     margin-left: 0;
 }
 
 .deleteButton{
-    background-color: var(--failed-color);
+    background-image: linear-gradient(to right, rgb(216, 12, 5), rgb(255, 47, 10));
 }
 
 .prioritizeButton{
-    background-color: var(--priority-color);
+    background-image: linear-gradient(to right, rgb(14, 123, 173), rgb(73, 196, 245));
 }
 
 .snoozeButton{
-    background-color: var(--snooze-color);
+    background-image: linear-gradient(to right, rgb(204, 192, 27), rgb(239, 255, 10));
 }
 
