@@ -1,5 +1,3 @@
-//import { Button } from '../sharedComponents/Button'
-import { AddButton } from '../buttons/AddButton'
 import { TasksButtons } from '../buttons/TasksButtons'
 import { Input } from '../sharedComponents/Input'
 import { Schedule } from './Schedule'
@@ -19,7 +17,7 @@ export const Body = () => {
             <div>
                 <Input />
             </div>
-            <AddButton />
+            
         </div>
     )
 }
