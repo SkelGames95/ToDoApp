@@ -1,4 +1,4 @@
-interface ToDo {
+export interface ToDo {
     id?:number;
     title:string;
     description?:string;
@@ -11,7 +11,7 @@ interface ToDo {
 
 type ToDoDraft = Partial<ToDo> & Required<Pick<ToDo, 'title' | 'id'>>;
 
-export function createTodo( ToDoDraft:ToDoDraft): ToDo {
+export function createTodo( ToDoDraft:ToDoDraft ): ToDo {
     return {
         id:ToDoDraft.id,
         title:ToDoDraft.title,
@@ -22,3 +22,8 @@ export function createTodo( ToDoDraft:ToDoDraft): ToDo {
         checked: ToDoDraft.checked ?? false
     }
 }
+
+// export const todo:Todo = createTodo({
+//     title: '',
+//     id: generateId(),
+// })
