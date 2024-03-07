@@ -1,6 +1,6 @@
 import { Body } from "./shared/components/containers/Body";
 import { Header } from "./shared/components/containers/Header"
-import { Navbar } from "./shared/components/sharedComponents/Navbar";
+import { Navbar } from "./shared/components/Navbar";
 import classes from './App.module.scss'
 
 export const App = () => {

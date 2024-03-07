@@ -1,7 +1,7 @@
 import classes from './style/Schedule.module.scss'
 import blackbin from "../../../assets/blackbin.svg";
 import archive from "../../../assets/archive.svg";
-import { TodoItem } from '../sharedComponents/TodoItem';
+import { TodoItem } from '../TodoItem';
 
 export const Schedule = () => {
   return (
