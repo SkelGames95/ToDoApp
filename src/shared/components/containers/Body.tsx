@@ -1,13 +1,25 @@
+import { useState } from "react";
 import { Schedule } from "./Schedule";
 import classes from "./style/Body.module.scss";
 
 export const Body = () => {
+  const [addTask, setAddTask] = useState("");
+  
+  const handleAddTask = (event:React.ChangeEvent<HTMLInputElement>) => {
+    setAddTask(event.target.value);
+    console.log(addTask);
+  }
+
+
+
   return (
     <div className={classes.bodyCont}>
+
       <div className={classes.scheduleCont}>
         <Schedule />
         {/* <AddSchedule /> */}
       </div>
+
       <div>
         <button
           className={`${classes.completeButton} ${classes.tasksButton}`}
@@ -26,10 +38,12 @@ export const Body = () => {
           Snooze
         </button>
       </div>
+
       <form name="addTask">
-        <input type="text" className={classes.toDoInput} />
-        <button className={classes.addButton}>ADD</button>
+        <input type="text" value={addTask} onChange={handleAddTask} className={classes.toDoInput} />
+        <button  className={classes.addButton}>ADD</button>
       </form>
+      
     </div>
   );
 };
