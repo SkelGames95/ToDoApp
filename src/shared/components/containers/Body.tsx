@@ -1,16 +1,19 @@
 import { useState } from "react";
 import { Schedule } from "./Schedule";
+import { createTodo } from "../../../models/todo";
 import classes from "./style/Body.module.scss";
 
+
+
 export const Body = () => {
-  const [addTask, setAddTask] = useState("");
+  const [writeTask, setWriteTask] = useState("");
+  const [sendTask, setSendTask] = useState("");
   
-  const handleAddTask = (event:React.ChangeEvent<HTMLInputElement>) => {
-    setAddTask(event.target.value);
-    console.log(addTask);
+  const handleWriteTask = (event:React.ChangeEvent<HTMLInputElement>) => {
+    setWriteTask(event.target.value);
   }
 
-
+  const handleAddTask = () => {
 
   return (
     <div className={classes.bodyCont}>
@@ -40,8 +43,8 @@ export const Body = () => {
       </div>
 
       <form name="addTask">
-        <input type="text" value={addTask} onChange={handleAddTask} className={classes.toDoInput} />
-        <button  className={classes.addButton}>ADD</button>
+        <input type="text" value={writeTask} onChange={handleWriteTask} className={classes.toDoInput} />
+        <button  className={classes.addButton} onClick={handleAddTask} >ADD</button>
       </form>
       
     </div>
